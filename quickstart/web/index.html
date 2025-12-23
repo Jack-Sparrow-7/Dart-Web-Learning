@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="scaffolded-by" content="https://github.com/dart-lang/sdk">
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="main.dart.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="screen active" id="start-screen">
+      <h1>Quiz Time!</h1>
+      <p>Test your knowledge with these fun questions</p>
+      <button id="start-btn">Start Quiz</button>
+    </div>
+
+    <div class="screen" id="quiz-screen">
+      <div class="quiz-header">
+        <h2 id="question-text">Question goes here!</h2>
+        <div class="quiz-info">
+          <p>Qustion <span id="current-question"></span> of <span id="total-questions"></span></p>
+
+          <p>Score: <span id="score">0</span></p>
+        </div>
+      </div>
+
+      <div id="answers-container" class="answers-container">
+
+      </div>
+
+      <div class="progress-bar">
+        <div id="progress" class="progress"></div>
+      </div>
+    </div>
+
+    <div id="result-screen" class="screen">
+      <h1>Quiz Results</h1>
+
+      <div class="result-info">
+        <p>You scored <span id="final-score"></span> out of <span id="max-score"></span></p>
+        <div id="result-message"></div>
+      </div>
+
+      <button id="restart-btn">Restart Quiz</button>
+    </div>
+  </div>
+</body>
+
+</html>
